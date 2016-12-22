@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "User.h"
+#import "NSObject+Extension.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +17,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSDictionary *dict = @{
+                           @"name" : @"Jack",
+                           @"icon" : @"lufy.png",
+                           @"age" : @"20",
+                           @"height" : @1.55,
+                           @"money" : @"100.9",
+                           @"sex" : @(SexFemale),
+                           @"gay" : @"1"
+                           };
+     [User zz_objectWithKeyValues:dict];
+    
 }
 
 

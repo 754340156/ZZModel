@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		600CD5201E0BCD6800971B6A /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CD51F1E0BCD6800971B6A /* NSObject+Property.m */; };
+		600CD5231E0BD1AC00971B6A /* PropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CD5221E0BD1AC00971B6A /* PropertyType.m */; };
+		600CD5261E0BD29800971B6A /* Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CD5251E0BD29800971B6A /* Property.m */; };
+		600CD5291E0BDA2A00971B6A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CD5281E0BDA2A00971B6A /* User.m */; };
 		6045AABD1E0A8EF2002E9696 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6045AABC1E0A8EF2002E9696 /* main.m */; };
 		6045AAC01E0A8EF2002E9696 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6045AABF1E0A8EF2002E9696 /* AppDelegate.m */; };
 		6045AAC31E0A8EF2002E9696 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6045AAC21E0A8EF2002E9696 /* ViewController.m */; };
@@ -17,6 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		600CD51E1E0BCD6800971B6A /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
+		600CD51F1E0BCD6800971B6A /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
+		600CD5211E0BD1AC00971B6A /* PropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyType.h; sourceTree = "<group>"; };
+		600CD5221E0BD1AC00971B6A /* PropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyType.m; sourceTree = "<group>"; };
+		600CD5241E0BD29800971B6A /* Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Property.h; sourceTree = "<group>"; };
+		600CD5251E0BD29800971B6A /* Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Property.m; sourceTree = "<group>"; };
+		600CD5271E0BDA2A00971B6A /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		600CD5281E0BDA2A00971B6A /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		6045AAB81E0A8EF2002E9696 /* ZZModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZZModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6045AABC1E0A8EF2002E9696 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6045AABE1E0A8EF2002E9696 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,8 +77,16 @@
 				6045AABF1E0A8EF2002E9696 /* AppDelegate.m */,
 				6045AAC11E0A8EF2002E9696 /* ViewController.h */,
 				6045AAC21E0A8EF2002E9696 /* ViewController.m */,
+				600CD5271E0BDA2A00971B6A /* User.h */,
+				600CD5281E0BDA2A00971B6A /* User.m */,
 				6045AAD21E0A9065002E9696 /* NSObject+Extension.h */,
 				6045AAD31E0A9065002E9696 /* NSObject+Extension.m */,
+				600CD51E1E0BCD6800971B6A /* NSObject+Property.h */,
+				600CD51F1E0BCD6800971B6A /* NSObject+Property.m */,
+				600CD5241E0BD29800971B6A /* Property.h */,
+				600CD5251E0BD29800971B6A /* Property.m */,
+				600CD5211E0BD1AC00971B6A /* PropertyType.h */,
+				600CD5221E0BD1AC00971B6A /* PropertyType.m */,
 				6045AAC41E0A8EF2002E9696 /* Main.storyboard */,
 				6045AAC71E0A8EF2002E9696 /* Assets.xcassets */,
 				6045AAC91E0A8EF2002E9696 /* LaunchScreen.storyboard */,
@@ -155,9 +175,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				600CD5291E0BDA2A00971B6A /* User.m in Sources */,
 				6045AAC31E0A8EF2002E9696 /* ViewController.m in Sources */,
 				6045AAC01E0A8EF2002E9696 /* AppDelegate.m in Sources */,
 				6045AABD1E0A8EF2002E9696 /* main.m in Sources */,
+				600CD5261E0BD29800971B6A /* Property.m in Sources */,
+				600CD5201E0BCD6800971B6A /* NSObject+Property.m in Sources */,
+				600CD5231E0BD1AC00971B6A /* PropertyType.m in Sources */,
 				6045AAD41E0A9065002E9696 /* NSObject+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
