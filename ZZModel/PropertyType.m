@@ -45,20 +45,28 @@ NSString *const PropertyTypeId = @"@";
     }
     return self;
 }
-- (void)getTypeCode:(NSString *)type
+- (void)setCode:(NSString *)code
 {
-    if ([type isEqualToString:PropertyTypeId]) {
+    _code = code;
+    if ([code isEqualToString:PropertyTypeId]) {
         _idType = YES;
-    } else if (type.length > 3 && [type hasPrefix:@"@\""]) {
-        // 去掉@"和"，截取中间的类型名称
-        _code = [type substringWithRange:NSMakeRange(2, type.length - 3)];
+    } else if (code.length == 0) {
+        
+        
+    } else if (code.length > 3 && [code hasPrefix:@"@\""]) {
+        _code = [code substringWithRange:NSMakeRange(2, code.length - 3)];
         _typeClass = NSClassFromString(_code);
-        _numberType = (_typeClass == [NSNumber class] || [_typeClass isSubclassOfClass:[NSNumber class]]);
+        _fromFoundation = [Foundation isClassFromFoundation:_typeClass];
+        _numberType = [_typeClass isSubclassOfClass:[NSNumber class]];
+        
+    } else if ([code isEqualToString:PropertyTypeSEL] ||
+               [code isEqualToString:PropertyTypeIvar] ||
+               [code isEqualToString:PropertyTypeMethod]) {
     }
     
     // 是否为数字类型
     NSString *lowerCode = _code.lowercaseString;
-    NSArray *numberTypes = @[PropertyTypeInt, PropertyTypeShort, PropertyTypeBOOL1, PropertyTypeBOOL2, PropertyTypeFloat, PropertyTypeDouble, PropertyTypeLong, PropertyTypeChar];
+    NSArray *numberTypes = @[PropertyTypeInt, PropertyTypeShort, PropertyTypeBOOL1, PropertyTypeBOOL2, PropertyTypeFloat, PropertyTypeDouble, PropertyTypeLong, PropertyTypeLongLong, PropertyTypeChar];
     if ([numberTypes containsObject:lowerCode]) {
         _numberType = YES;
         

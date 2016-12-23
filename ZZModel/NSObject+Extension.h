@@ -9,8 +9,15 @@
 #import <Foundation/Foundation.h>
 
 
+@protocol ZZKeyValue <NSObject>
+@optional
+//返回字典告诉数组里面装的是什么
++ (NSDictionary *)objectClassInArray;
++ (NSDictionary *)replacedKeyFromPropertyName;
+@end
 
-@interface NSObject (Extension)
+
+@interface NSObject (Extension)<ZZKeyValue>
 #pragma mark - 字典转模型
 /**
  *  通过字典来创建一个模型

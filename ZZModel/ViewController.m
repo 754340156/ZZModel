@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "User.h"
-#import "NSObject+Extension.h"
+#import "Person.h"
+#import "ZZModel.h"
+#import <objc/runtime.h>
 @interface ViewController ()
 
 @end
@@ -17,24 +18,43 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSDictionary *dict = @{
-                           @"name" : @"Jack",
-                           @"icon" : @"lufy.png",
-                           @"age" : @"20",
-                           @"height" : @1.55,
-                           @"money" : @"100.9",
-                           @"sex" : @(SexFemale),
-                           @"gay" : @"1"
-                           };
-     [User zz_objectWithKeyValues:dict];
+    NSArray *array = @[@{@"name":@"小王",
+                         @"icon":@"123456789",
+                         @"height":@183,
+                         @"isMan":@"1",
+                         @"dog":@[@{@"name":@"小王的dog1",
+                                    @"icon":@"123456789",
+                                    @"height":@183,
+                                    @"isMan":@"1"},
+                                  @{@"name":@"小王的dog2",
+                                    @"icon":@"123456789",
+                                    @"height":@183,
+                                    @"isMan":@"1"},
+                                  @{@"name":@"小王的dog3",
+                                    @"icon":@"123456789",
+                                    @"height":@183,
+                                    @"isMan":@"1"}]},
+                       @{@"name":@"小李",
+                         @"icon":@"123456789",
+                         @"height":@183,
+                         @"isMan":@"1",
+                         @"dog":@[@{@"name":@"小李的dog1",
+                                    @"icon":@"123456789",
+                                    @"height":@183,
+                                    @"isMan":@"1"},
+                                  @{@"name":@"小李的dog2",
+                                    @"icon":@"123456789",
+                                    @"height":@183,
+                                    @"isMan":@"1"},
+                                  @{@"name":@"小李的dog3",
+                                    @"icon":@"123456789",
+                                    @"height":@183,
+                                    @"isMan":@"1"}]}];
+    NSArray *realArray =  [Person zz_keyValuesArrayWithObjectArray:array];
     
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 
 @end

@@ -10,7 +10,6 @@
 		600CD5201E0BCD6800971B6A /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CD51F1E0BCD6800971B6A /* NSObject+Property.m */; };
 		600CD5231E0BD1AC00971B6A /* PropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CD5221E0BD1AC00971B6A /* PropertyType.m */; };
 		600CD5261E0BD29800971B6A /* Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CD5251E0BD29800971B6A /* Property.m */; };
-		600CD5291E0BDA2A00971B6A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 600CD5281E0BDA2A00971B6A /* User.m */; };
 		6045AABD1E0A8EF2002E9696 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6045AABC1E0A8EF2002E9696 /* main.m */; };
 		6045AAC01E0A8EF2002E9696 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6045AABF1E0A8EF2002E9696 /* AppDelegate.m */; };
 		6045AAC31E0A8EF2002E9696 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6045AAC21E0A8EF2002E9696 /* ViewController.m */; };
@@ -18,6 +17,8 @@
 		6045AAC81E0A8EF2002E9696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6045AAC71E0A8EF2002E9696 /* Assets.xcassets */; };
 		6045AACB1E0A8EF2002E9696 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6045AAC91E0A8EF2002E9696 /* LaunchScreen.storyboard */; };
 		6045AAD41E0A9065002E9696 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6045AAD31E0A9065002E9696 /* NSObject+Extension.m */; };
+		6065EA4F1E0D04B5003E1927 /* Foundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6065EA4E1E0D04B5003E1927 /* Foundation.m */; };
+		6065EA521E0D1346003E1927 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 6065EA511E0D1346003E1927 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +28,6 @@
 		600CD5221E0BD1AC00971B6A /* PropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyType.m; sourceTree = "<group>"; };
 		600CD5241E0BD29800971B6A /* Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Property.h; sourceTree = "<group>"; };
 		600CD5251E0BD29800971B6A /* Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Property.m; sourceTree = "<group>"; };
-		600CD5271E0BDA2A00971B6A /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		600CD5281E0BDA2A00971B6A /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		6045AAB81E0A8EF2002E9696 /* ZZModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZZModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6045AABC1E0A8EF2002E9696 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6045AABE1E0A8EF2002E9696 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -41,6 +40,11 @@
 		6045AACC1E0A8EF2002E9696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6045AAD21E0A9065002E9696 /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
 		6045AAD31E0A9065002E9696 /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
+		6065EA4D1E0D04B5003E1927 /* Foundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foundation.h; sourceTree = "<group>"; };
+		6065EA4E1E0D04B5003E1927 /* Foundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Foundation.m; sourceTree = "<group>"; };
+		6065EA501E0D1346003E1927 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		6065EA511E0D1346003E1927 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		6065EA561E0D183E003E1927 /* ZZModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +81,9 @@
 				6045AABF1E0A8EF2002E9696 /* AppDelegate.m */,
 				6045AAC11E0A8EF2002E9696 /* ViewController.h */,
 				6045AAC21E0A8EF2002E9696 /* ViewController.m */,
-				600CD5271E0BDA2A00971B6A /* User.h */,
-				600CD5281E0BDA2A00971B6A /* User.m */,
+				6065EA501E0D1346003E1927 /* Person.h */,
+				6065EA511E0D1346003E1927 /* Person.m */,
+				6065EA561E0D183E003E1927 /* ZZModel.h */,
 				6045AAD21E0A9065002E9696 /* NSObject+Extension.h */,
 				6045AAD31E0A9065002E9696 /* NSObject+Extension.m */,
 				600CD51E1E0BCD6800971B6A /* NSObject+Property.h */,
@@ -87,6 +92,8 @@
 				600CD5251E0BD29800971B6A /* Property.m */,
 				600CD5211E0BD1AC00971B6A /* PropertyType.h */,
 				600CD5221E0BD1AC00971B6A /* PropertyType.m */,
+				6065EA4D1E0D04B5003E1927 /* Foundation.h */,
+				6065EA4E1E0D04B5003E1927 /* Foundation.m */,
 				6045AAC41E0A8EF2002E9696 /* Main.storyboard */,
 				6045AAC71E0A8EF2002E9696 /* Assets.xcassets */,
 				6045AAC91E0A8EF2002E9696 /* LaunchScreen.storyboard */,
@@ -175,12 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				600CD5291E0BDA2A00971B6A /* User.m in Sources */,
+				6065EA4F1E0D04B5003E1927 /* Foundation.m in Sources */,
 				6045AAC31E0A8EF2002E9696 /* ViewController.m in Sources */,
 				6045AAC01E0A8EF2002E9696 /* AppDelegate.m in Sources */,
 				6045AABD1E0A8EF2002E9696 /* main.m in Sources */,
 				600CD5261E0BD29800971B6A /* Property.m in Sources */,
 				600CD5201E0BCD6800971B6A /* NSObject+Property.m in Sources */,
+				6065EA521E0D1346003E1927 /* Person.m in Sources */,
 				600CD5231E0BD1AC00971B6A /* PropertyType.m in Sources */,
 				6045AAD41E0A9065002E9696 /* NSObject+Extension.m in Sources */,
 			);
