@@ -15,7 +15,8 @@
 }
 
 
-- (instancetype)initWithProperty:(objc_property_t)property{
+- (instancetype)initWithProperty:(objc_property_t)property
+{
     if (self = [super init]) {
         _name = @(property_getName(property));
         _type = [PropertyType propertyTypeWithAttributeString:@(property_getAttributes(property))];;

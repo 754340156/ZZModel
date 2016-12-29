@@ -48,7 +48,8 @@ NSString *const PropertyTypeId = @"@";
 - (void)setCode:(NSString *)code
 {
     _code = code;
-    if ([code isEqualToString:PropertyTypeId]) {
+    if ([code isEqualToString:PropertyTypeId])
+    {
         _idType = YES;
     } else if (code.length == 0) {
         

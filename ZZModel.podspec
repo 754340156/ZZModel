@@ -3,13 +3,11 @@ Pod::Spec.new do |s|
 
 
   s.name         = "ZZModel"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of ZZModel."
+  s.version      = "1.0.1"
+  s.summary      = "这是一个字典转模型的库"
 
-  s.description  = <<-DESC
-                   DESC
 
-  s.homepage     = "http://EXAMPLE/ZZModel"
+  s.homepage     = "https://github.com/754340156"
 
 
   s.license = { :type => "MIT", :file => "LICENSE" }
@@ -20,7 +18,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/754340156/ZZModel.git", :tag => "#{s.version}" }
 
 
-  s.source_files  = "ZZModel/ZZModel/*.{h,m}”
+  s.source_files  = "ZZModel/ZZModel/*.{h,m}"
  s.requires_arc = true
 
 end
